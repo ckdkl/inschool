@@ -11,46 +11,46 @@
     <link rel="stylesheet" href="./fx_files/weuix.css">
     <link rel="stylesheet" href="./fx_files/fx.css">
     <script type="text/javascript">
-//         // set cookie for convenience
-//         function setCookie(name, id, institute) {
-//             // set expire to 7 days later
-//             var date = new Date();
-//             date.setTime(date.getTime() + (7*24*60*60*1000));
+        // set cookie for convenience
+        function setCookie(name, id, institute) {
+            // set expire to 7 days later
+            var date = new Date();
+            date.setTime(date.getTime() + (7*24*60*60*1000));
 
-//             document.cookie = "name=" + encodeURIComponent(name);
-//             document.cookie = "id=" + encodeURIComponent(id);
-//             document.cookie = "institute=" + encodeURIComponent(institute);
-//             document.cookie = "expires=" + date.toUTCString();
-//         }
+            document.cookie = "name=" + encodeURIComponent(name);
+            document.cookie = "id=" + encodeURIComponent(id);
+            document.cookie = "institute=" + encodeURIComponent(institute);
+            document.cookie = "expires=" + date.toUTCString();
+        }
 
-//         function updateCookie() {
-//             var nameHolder = document.getElementById("name")
-//             var idHolder = document.getElementById('id')
-//             var instituteHolder = document.getElementById('institute')
+        function updateCookie() {
+            var nameHolder = document.getElementById("name")
+            var idHolder = document.getElementById('id')
+            var instituteHolder = document.getElementById('institute')
 
-//             setCookie(nameHolder.innerHTML, idHolder.innerHTML, instituteHolder.innerHTML)
-//         }
+            setCookie(nameHolder.innerHTML, idHolder.innerHTML, instituteHolder.innerHTML)
+        }
 
-//         // another random function from the internet
-//         function getCookie(name) {
-//             let matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
-//             return matches ? decodeURIComponent(matches[1]) : undefined;
-//         }
+        // another random function from the internet
+        function getCookie(name) {
+            let matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+            return matches ? decodeURIComponent(matches[1]) : undefined;
+        }
 
-//         // load data from cookie
-//         function getSavedData() {
-//             var items = document.cookie.split(';')
-//             var name = getCookie('name')
-//             var id = getCookie('id')
-//             var institute = getCookie('institute')
+        // load data from cookie
+        function getSavedData() {
+            var items = document.cookie.split(';')
+            var name = getCookie('name')
+            var id = getCookie('id')
+            var institute = getCookie('institute')
 
-//             if(name === undefined || id === undefined || institute === undefined) {
-//                 console.log("Cookie not found.")
-//                 return false
-//             } else {
-//                 return [name, id, institute]
-//             }
-//         }
+            if(name === undefined || id === undefined || institute === undefined) {
+                console.log("Cookie not found.")
+                return false
+            } else {
+                return [name, id, institute]
+            }
+        }
 
         // deletes all cookies, for debug purposes
         function throwCookies() {
