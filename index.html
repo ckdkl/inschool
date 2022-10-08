@@ -113,15 +113,15 @@
             instituteHolder.innerHTML = institute
 
             // Probably useless because no one actually verfies it
-            rCodeHolder.innerHTML = "随机码：" + generateId(6)
+            //rCodeHolder.innerHTML = "随机码：" + generateId(6)
 
             // register onclick event
             nameHolder.onclick = function() { nameHolder.innerHTML = prompt("请输入姓名", "马克思") ?? "马克思"; updateCookie() }
             idHolder.onclick = function() { idHolder.innerHTML = prompt("请输入学号", "1000000001") ?? "1000000001"; updateCookie() }
             instituteHolder.onclick = function() { instituteHolder.innerHTML = prompt("请输入所在学院", "家里蹲学院") ?? "家里蹲学院"; updateCookie() }
 
-            mCodeHolder.onclick = function() { mCodeHolder.innerHTML = prompt("请输入神秘代码", "1374") ?? "1374" }
-            rCodeHolder.onclick = function() { rCodeHolder.innerHTML = "随机码：" + generateId(6) }
+            //mCodeHolder.onclick = function() { mCodeHolder.innerHTML = prompt("请输入神秘代码", "1374") ?? "1374" }
+            //rCodeHolder.onclick = function() { rCodeHolder.innerHTML = "随机码：" + generateId(6) }
         }
     </script>
     <script src="./fx_files/safe.js"></script>
